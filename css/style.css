@@ -1,1 +1,88 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@font-face {
+  font-family: "CenturyGothic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CenturyGothic/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype");
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-width: 320px;
+  font-family: "CenturyGothic";
+  font-size: 1.4rem;
+  line-height: 1.25;
+  color: #000;
+}
+
+.page-top {
+  background-color: #514f5d;
+  padding-top: 13rem;
+  min-height: 65rem;
+}
+
+.page-h1,
+.page-h2,
+.page-h3,
+.banner-text {
+  margin: 0;
+  display: block;
+  color: #fff;
+}
+
+.page-h1 {
+  margin-bottom: 3rem;
+  font-size: 14.5rem;
+}
+
+.page-h1 span {
+  color: #ff91a5;
+}
+
+.page-h2 {
+  font-size: 4.8rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.page-h3 {
+  font-size: 3.6rem;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.banner-text {
+  font-size: 2.4rem;
+}
+
+.main-nav {
+  padding: 0;
+  margin: 0;
+  margin-top: 10rem;
+  margin-bottom: 4.5rem;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.main-nav a {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.main-nav a:hover {
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.banner-img img {
+  width: 100%;
+  height: auto;
+  max-width: 30rem;
+}

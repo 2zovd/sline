@@ -1,7 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+@import 'fonts'
 @import 'vars'
 
+html
+	font-size: 10px
 
+body
+	min-width: 320px
+	font-family: $font
+	font-size: 1.4rem
+	line-height: 1.25
+	color: #000
+	
+.page-top
+	background-color: #514f5d
+	padding-top: 13rem
+	min-height: 65rem
 
+.page-h1,
+.page-h2,
+.page-h3,
+.banner-text
+	margin: 0
+	display: block
+	color: #fff
+
+.page-h1
+	margin-bottom: 3rem
+	font-size: 14.5rem
+	span
+		color: $pink
+
+.page-h2
+	font-size: 4.8rem
+	font-weight: bold
+	margin: 0
+	margin-bottom: 1rem
+
+.page-h3
+	font-size: 3.6rem
+	margin: 0
+	margin-bottom: 3rem
+
+.banner-text
+	font-size: 2.4rem
+
+.main-nav
+	padding: 0
+	margin: 0
+	margin-top: 10rem
+	margin-bottom: 4.5rem
+	li
+		display: inline-block
+		margin-right: 3rem
+	a
+		color: #fff
+		font-size: 1.8rem
+		&:hover
+			font-weight: bold
+			background-color: transparent
+			text-decoration: none
+
+.banner-img
+	img
+		width: 100%
+		height: auto
+		max-width: 30rem
 
 @import 'media'
