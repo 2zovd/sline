@@ -1096,11 +1096,11 @@ select {
 
 @media only screen and (max-width: 576px) {
   .btn-scroll-top {
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
   .btn-scroll-top i {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
