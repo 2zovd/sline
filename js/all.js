@@ -1,9 +1,5 @@
 $( document ).ready(function() {
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> c44631aeb36018415f344836d1d7dda73beaf83f
 	$('.product-slider').slick({
 		slidesToShow: 1,
 		arrows: true,
@@ -12,26 +8,12 @@ $( document ).ready(function() {
 		dots: true,
 		autoplay: false
 	});
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> c44631aeb36018415f344836d1d7dda73beaf83f
-	(function($){
-		$(window).on("load",function(){
-			$(".scroll-init").mPageScroll2id();
-		});
-	})(jQuery);
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> c44631aeb36018415f344836d1d7dda73beaf83f
 	$('.open-popup-link').magnificPopup({
 		type:'inline',
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	});
-<<<<<<< HEAD
+
 
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
@@ -42,8 +24,14 @@ $( document ).ready(function() {
 		}
 	});
 
-=======
-	
->>>>>>> c44631aeb36018415f344836d1d7dda73beaf83f
 });
 
+(function($){
+	$(window).on("load",function(){
+		$(".scroll-init").mPageScroll2id();
+	});
+})(jQuery);
+
+$(window).on('load', function() {
+	$('.preloader').delay(1200).fadeOut('slow');
+});
