@@ -220,6 +220,8 @@ body {
   width: 100%;
   height: auto;
   max-width: 30rem;
+  position: relative;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -465,6 +467,7 @@ body {
   .size-item {
     width: 2.22rem;
     height: 2.22rem;
+    margin-right: 0.4rem;
   }
   .size-item strong {
     font-size: 1.3rem;
@@ -756,6 +759,12 @@ body {
   padding: 12rem 0 9rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .how {
+    padding: 7.2rem 0 5.4rem;
+  }
+}
+
 .grey-bg {
   background-color: #f4f4f4;
 }
@@ -772,6 +781,12 @@ body {
 .contact {
   padding: 12rem 0;
   border-top: #d8d8d8;
+}
+
+@media only screen and (max-width: 576px) {
+  .contact {
+    padding: 5rem 0;
+  }
 }
 
 .contact-row {
@@ -814,6 +829,13 @@ body {
   flex-shrink: 0;
 }
 
+@media only screen and (max-width: 576px) {
+  .contact-item {
+    margin: 0 1rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
 .contact-item span {
   display: inline-block;
   vertical-align: middle;
@@ -825,6 +847,13 @@ body {
   margin-right: 1rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .contact-item span {
+    width: 1.44rem;
+    height: 1.44rem;
+  }
+}
+
 .contact-item p {
   color: #000;
   display: inline-block;
@@ -832,6 +861,12 @@ body {
   font-size: 2.4rem;
   margin: 0;
   line-height: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .contact-item p {
+    font-size: 1.45rem;
+  }
 }
 
 .contact-item a {
@@ -846,11 +881,24 @@ body {
   padding: 12rem 0;
 }
 
+@media only screen and (max-width: 576px) {
+  .order {
+    padding: 7rem 0;
+  }
+}
+
 .order-description {
   display: block;
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 6.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .order-description {
+    font-size: 1.3rem;
+    margin-bottom: 3.9rem;
+  }
 }
 
 .form-field {
@@ -871,6 +919,15 @@ body {
   border-color: rgba(0, 0, 0, 0.25);
 }
 
+@media only screen and (max-width: 576px) {
+  .form-field {
+    height: 4rem;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 .form-row {
   margin-bottom: 3rem;
 }
@@ -889,7 +946,7 @@ body {
   display: inline-block;
   min-width: 2.2rem;
   border: 2px solid #000;
-  line-height: 5rem;
+  height: 5.4rem;
   font-size: 1.6rem;
   color: #000;
   font-weight: bold;
@@ -907,6 +964,14 @@ body {
   border-color: #ff91a5;
 }
 
+@media only screen and (max-width: 576px) {
+  .btn-form {
+    font-size: 1.4rem;
+    height: 4rem;
+    padding: 0 2.6rem;
+  }
+}
+
 .copyright {
   display: block;
   padding: 3rem 0;
@@ -920,6 +985,7 @@ body {
 @media only screen and (max-width: 576px) {
   .copyright {
     padding: 1.5rem 0;
+    font-size: 1.4rem;
   }
 }
 
@@ -942,5 +1008,17 @@ body {
   .size-table td,
   .size-table th {
     padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #f4f4f4;
+  }
+}
+
+.custom-margin {
+  margin-bottom: 7rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .custom-margin {
+    margin-bottom: 3rem;
   }
 }
