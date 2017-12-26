@@ -1077,11 +1077,18 @@ select {
   justify-content: center;
   border: 2px solid #ff91a5;
   opacity: 0.8;
+<<<<<<< HEAD
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
   cursor: pointer;
   visibility: hidden;
+=======
+  -webkit-transition: all 0.15s ease 0.05s;
+  -o-transition: all 0.15s ease 0.05s;
+  transition: all 0.15s ease 0.05s;
+  cursor: pointer;
+>>>>>>> c44631aeb36018415f344836d1d7dda73beaf83f
 }
 
 .btn-scroll-top i {
@@ -1094,6 +1101,7 @@ select {
   opacity: 1;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 576px) {
   .btn-scroll-top {
     width: 4rem;
@@ -1104,6 +1112,8 @@ select {
   }
 }
 
+=======
+>>>>>>> c44631aeb36018415f344836d1d7dda73beaf83f
 .white-popup {
   position: relative;
   background: #fff;
