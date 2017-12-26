@@ -437,10 +437,28 @@ body
 	background-color: transparent
 	outline: none
 	transition: $transition
-	&:hover
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-ms-align-items: center
+	align-items: center
+	-webkit-justify-content: center
+	-moz-justify-content: center
+	-ms-justify-content: center
+	-o-justify-content: center
+	justify-content: center
+	text-decoration: none
+	&:hover,
+	&:active,
+	&:focus
 		background-color: $pink
 		color: #fff
 		border-color: $pink
+		outline: none
+		text-decoration: none
+		outline: none
 	@include sm
 		height: 4rem	
 		font-size: 1.3rem
@@ -606,6 +624,9 @@ body
 		font-size: 1.4rem
 		padding-left: 1.5rem
 		padding-right: 1.5rem
+	
+select
+	cursor: pointer
 
 .form-row
 	margin-bottom: 3rem
@@ -671,3 +692,69 @@ body
 	margin-bottom: 7rem
 	@include sm
 		margin-bottom: 3rem
+
+.btn-scroll-top
+	position: fixed
+	right: 2rem
+	bottom: 2rem
+	width: 5rem
+	height: 5rem
+	background-color: #fff
+	border: none
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-ms-align-items: center
+	align-items: center
+	-webkit-justify-content: center
+	-moz-justify-content: center
+	-ms-justify-content: center
+	-o-justify-content: center
+	justify-content: center
+	border: 2px solid $pink
+	opacity: 0.8
+	-webkit-transition: $transition
+	-o-transition: $transition
+	transition: $transition
+	cursor: pointer
+	i
+		color: $pink
+		font-size: 2rem
+	&:hover,
+	&:active,
+	&:focus
+		text-decoration: none
+		opacity: 1
+
+.white-popup
+	position: relative;
+	background: #fff;
+	padding: 4rem 3rem;
+	width: auto;
+	max-width: 500px;
+	margin: 20px auto;
+
+.popup-title
+	display: block
+	text-align: center
+	font-size: 2.5rem
+	margin-bottom: 3rem
+	color: #000
+	@include sm
+		font-size: 2rem
+		margin-bottom: 1.5rem
+
+.popup-description
+	display: block
+	font-size: 1.5rem
+	text-align: center
+	margin-bottom: 3rem
+	@include sm
+		font-size: 1.3rem
+		margin-bottom: 2rem
+
+.popup-form
+	.form-field
+		border-color: rgba(0,0,0,.3)
