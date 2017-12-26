@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+	//slider options
 	$('.product-slider').slick({
 		slidesToShow: 1,
 		arrows: true,
@@ -9,12 +10,17 @@ $( document ).ready(function() {
 		autoplay: false
 	});
 
+	//popup
 	$('.open-popup-link').magnificPopup({
 		type:'inline',
-		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		midClick: true
+	});
+	
+	$(document).ready(function() {
+		$('.image-link').magnificPopup({type:'image'});
 	});
 
-
+	//scroll to top arrow
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
 		if (y > 400) {
@@ -26,12 +32,14 @@ $( document ).ready(function() {
 
 });
 
+//Scroll to block
 (function($){
 	$(window).on("load",function(){
 		$(".scroll-init").mPageScroll2id();
 	});
 })(jQuery);
 
+//preloader
 $(window).on('load', function() {
 	$('.preloader').delay(1200).fadeOut('slow');
 });
