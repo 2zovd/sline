@@ -270,7 +270,7 @@ body {
 
 .product-slide_img {
   height: 40rem;
-  max-width: 30rem;
+  max-width: 35rem;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -285,7 +285,7 @@ body {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: block;
-  width: 110%;
+  width: 100%;
   height: auto;
 }
 
@@ -825,8 +825,8 @@ body {
 
 .review-photo {
   border-radius: 100%;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 3rem;
@@ -840,8 +840,8 @@ body {
 
 @media only screen and (max-width: 576px) {
   .review-photo {
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     margin-bottom: 2rem;
   }
 }
@@ -1415,7 +1415,6 @@ select {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
