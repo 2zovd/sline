@@ -5,6 +5,13 @@
   src: url("../fonts/CenturyGothic/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothic/CenturyGothic.woff") format("woff"), url("../fonts/CenturyGothic/CenturyGothic.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "CenturyGothicBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/CenturyGothicBold/CenturyGothicBold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothicBold/CenturyGothicBold.woff") format("woff"), url("../fonts/CenturyGothicBold/CenturyGothicBold.ttf") format("truetype");
+}
+
 ::-webkit-input-placeholder {
   color: #000;
   opacity: 1;
@@ -60,6 +67,10 @@ body {
   color: #000;
 }
 
+strong {
+  font-family: "CenturyGothicBold";
+}
+
 .page-top {
   background-color: #514f5d;
 }
@@ -90,6 +101,7 @@ body {
 }
 
 .page-h2 {
+  font-family: "CenturyGothicBold";
   font-size: 4.8rem;
   font-weight: bold;
   margin: 0;
@@ -308,6 +320,7 @@ body {
   font-size: 1.8rem;
   color: #000;
   margin-bottom: 3rem;
+  font-family: "CenturyGothicBold";
   font-weight: 700;
 }
 
@@ -457,8 +470,9 @@ body {
 
 .size-item strong {
   display: inline-block;
+  font-family: "CenturyGothicBold";
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1;
   color: #ff91a5;
 }
@@ -470,7 +484,7 @@ body {
     margin-right: 0.4rem;
   }
   .size-item strong {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -656,6 +670,7 @@ body {
   height: 5.4rem;
   font-size: 1.6rem;
   color: #000;
+  font-family: "CenturyGothicBold";
   font-weight: bold;
   background-color: transparent;
   outline: none;
@@ -1168,6 +1183,10 @@ select {
   color: #000;
 }
 
+.success-message_inner {
+  padding: 0 1.5rem;
+}
+
 .form-row_holder {
   margin-bottom: 3rem;
 }
@@ -1179,6 +1198,7 @@ select {
   height: 5.4rem;
   font-size: 1.6rem;
   color: #000;
+  font-family: "CenturyGothicBold";
   font-weight: bold;
   background-color: transparent;
   outline: none;
