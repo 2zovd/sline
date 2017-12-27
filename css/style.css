@@ -56,7 +56,7 @@ body {
   min-width: 320px;
   font-family: "CenturyGothic";
   font-size: 1.4rem;
-  line-height: 1.25;
+  line-height: 1.35;
   color: #000;
 }
 
@@ -796,8 +796,70 @@ body {
   border: none;
 }
 
-.about {
-  padding: 12rem 0;
+.review {
+  width: 100%;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 12rem 0 9rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .review {
+    padding: 5rem 0;
+  }
+}
+
+.review-block {
+  padding: 3rem 2rem;
+  margin-bottom: 3rem;
+  min-height: 55rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .review-block {
+    min-height: 4rem;
+    padding: 1.8rem 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.review-photo {
+  border-radius: 100%;
+  width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.review-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .review-photo {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.reviev-description {
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.reviev-description p {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .reviev-description {
+    font-size: 1.4rem;
+  }
 }
 
 .contact {
@@ -946,6 +1008,10 @@ body {
   -webkit-transition: all 0.15s ease 0.05s;
   -o-transition: all 0.15s ease 0.05s;
   transition: all 0.15s ease 0.05s;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .form-field:focus {
@@ -963,11 +1029,10 @@ body {
 
 select {
   cursor: pointer;
-  /* needed */
+  background-color: #fff;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* SVG background image */
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='#000'><polygon points='0,0 100,0 50,50'/></svg>");
   background-repeat: no-repeat;
   background-size: 11px;
